@@ -46,4 +46,4 @@ you can use postman, curl etc. to send requests.
 
 
 # stop the server
-ctrl+c
+`ctrl+c`
