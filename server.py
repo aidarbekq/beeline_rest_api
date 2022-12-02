@@ -57,9 +57,9 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             post_data = json.loads(self.rfile.read(length))  # содержимое запроса
             if post_data:
                 self.received_response(post_data)
-                with open("sample.json", "w") as outfile:
+                with open("post_json_data_.json", "w") as outfile:
                     json.dump(post_data, outfile)
-                if os.path.exists(f"sample.json"):
+                if os.path.exists(f"post_json_data_.json"):
                     thread = Thread(target=printing_name, daemon=True)
                     thread.start()
 
