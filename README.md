@@ -13,19 +13,19 @@ METHODS : POST
 ## Getting Started
 
 ## clone
-  git clone https://github.com/aidarbekq/beeline_rest_api.git 
+ `git clone https://github.com/aidarbekq/beeline_rest_api.git` 
 
 #### Important !  You need to create and activate the virtualenv before next step.
 * [virtualenv](https://pypi.org/project/virtualenv/)
 
 ## Install all required dependencies from requirements file
 
-  `pip install -r requirements.txt`
+ `pip install -r requirements.txt`
 
 
 # run the server
 
-python server.py
+`python server.py`
 
 
 
