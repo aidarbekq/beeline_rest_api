@@ -32,7 +32,7 @@ METHODS : POST
 # send post request
 send to http://127.0.0.1:8000 
 
-important! post request must be json format. {"name": "name", "time": "year-month-day hour:minute"} 
+important! post request must be json format. API waits 'name' and 'time'. {"name": "name", "time": "year-month-day hour:minute"} 
 
 E: `{"name": "test", "time": "2022-12-2 23:05"}`
 
