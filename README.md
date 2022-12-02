@@ -5,7 +5,9 @@
 
 ### REST API WITHOUT ANY FRAMEWORKS. 
 Pure python. 
+
 Based on socket and http.server libraries. 
+
 METHODS : POST
 
 ## Getting Started
