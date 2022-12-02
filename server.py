@@ -1,19 +1,20 @@
 import http.server
-import json
-import os
 from io import BytesIO
-import cgi
 from datetime import datetime
-import re
 from threading import Thread
 import pause
+import json
+import os
+import cgi
+import re
+
 
 PORT = 8000
 
 
 def printing_name():
     """Функция отложенного исполнения"""
-    with open(f"post_json_data_.json", "r", encoding="utf-8") as json_file:
+    with open(f"post_json_data.json", "r", encoding="utf-8") as json_file:
         data = json.load(json_file)
         json_time = data['time']  # получаем данные "time" отправленных клиентами
         times = re.split('-| |:', json_time)   # преобразовываем данные 'time' в datetime(python) формат
@@ -57,9 +58,9 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             post_data = json.loads(self.rfile.read(length))  # содержимое запроса
             if post_data:
                 self.received_response(post_data)
-                with open("post_json_data_.json", "w") as outfile:   # сохраняем данные запроса в файле
+                with open("post_json_data.json", "w") as outfile:   # сохраняем данные запроса в файле
                     json.dump(post_data, outfile)
-                if os.path.exists(f"post_json_data_.json"):
+                if os.path.exists(f"post_json_data.json"):
                     thread = Thread(target=printing_name, daemon=True)
                     thread.start()  # запуск отложенной функции используя threading(многопоточность)
 
