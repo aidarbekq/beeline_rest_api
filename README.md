@@ -27,7 +27,9 @@ python server.py
 # send post request
 send to http://127.0.0.1:8000 
 
-important! post request must be json format. E: {"name": "test", "time": "2022-12-2 10:05"}
+important! post request must be json format. E: {"name": "test", "time": "2022-12-2 23:05"}
+
+time - must be FUTURE TIME
 
 you can use postman, curl etc. to send requests. 
 
