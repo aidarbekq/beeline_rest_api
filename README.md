@@ -28,7 +28,10 @@ python server.py
 send to http://127.0.0.1:8000 
 important! post request must be json format. E: {"name": "test", "time": "2022-12-2 10:05"}
 
-you can use curl, postman etc.
+you can use postman, curl etc. to send requests. 
+
+* [postman](https://learning.postman.com/docs/getting-started/introduction/)
+
 * [curl](https://reqbin.com/req/c-d2nzjn3z/curl-post-body)
 
 
