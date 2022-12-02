@@ -4,7 +4,8 @@
 ## About The Project
 
 ### REST API WITHOUT FRAMEWORKS. 
-Pure python. Based on socket and http.server 
+###Pure python. Based on socket and http.server libraries. 
+###METHODS : POST
 
 ## Getting Started
 
