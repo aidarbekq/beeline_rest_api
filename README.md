@@ -20,7 +20,7 @@ METHODS : POST
 
 ## Install all required dependencies from requirements file
 
-  pip install -r requirements.txt
+  `pip install -r requirements.txt`
 
 
 # run the server
