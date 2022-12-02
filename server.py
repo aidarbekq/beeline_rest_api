@@ -57,7 +57,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             post_data = json.loads(self.rfile.read(length))  # содержимое запроса
             if post_data:
                 self.received_response(post_data)
-                with open("post_json_data_.json", "w") as outfile:   # сохраняем данны запроса в файле
+                with open("post_json_data_.json", "w") as outfile:   # сохраняем данные запроса в файле
                     json.dump(post_data, outfile)
                 if os.path.exists(f"post_json_data_.json"):
                     thread = Thread(target=printing_name, daemon=True)
@@ -77,5 +77,3 @@ except KeyboardInterrupt:  # CTRL+C
     httpd.shutdown()
     print("Stopping server")
     httpd.server_close()
-
-
