@@ -19,7 +19,7 @@ def printing_name():
         times = re.split('-| |:', json_time)   # преобразовываем данные 'time' в datetime(python) формат
         schedule_time = datetime(int(times[0]), int(times[1]), int(times[2]), int(times[3]), int(times[4]))
         pause.until(schedule_time)
-    print(data['name']) # вывод "name" в консоль
+    print(data['name'])  # вывод "name" в консоль
 
 
 class Handler(http.server.SimpleHTTPRequestHandler):
