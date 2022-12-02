@@ -3,7 +3,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-### REST API WITHOUT FRAMEWORKS. Pure python. Based on socket and http.server 
+### REST API WITHOUT FRAMEWORKS. 
+Pure python. Based on socket and http.server 
 
 ## Getting Started
 
